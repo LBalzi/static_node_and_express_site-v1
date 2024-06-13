@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  article.portfolio-intro
+    h1 My Portfolio
+
+    p A list of five projects I have developed during my full stack Javascript journey.
+  
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+      ul
+        each project in projects
+          li
+            a(href=`/project/${project.id}`)= project.project_name
+      .cell
+        a(href='#')
+          img.thumbnail(src='https://placehold.it/550x550', alt='')
+          h5 My Site

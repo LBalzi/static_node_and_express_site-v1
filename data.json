@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Random Quote Generator",
+            "description": "For my first project, I created an app that displays random famous quotes each time a button is clicked. I selected my own quotes from famous historical figures, artists, scientists, celebrities, etc.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "#",
+            "github_link": "https://github.com/LBalzi/A-Random-Quote-Generator",
+            "image_urls": [
+                "images/0-1.png",
+                "images/0-2.png"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Data Pagination and Filtering",
+            "description": "For my second project, I used a common web development technique known as 'pagination' to enhance the usability of a web page. I started with a file that contained information for 42 students, including name, email, and picture. I began by using my JavaScript skills to display the first nine students on the page. Then I added navigation, also known as pagination buttons, that the user could click to display different pages of students.",
+            "technologies": ["React", "Node.js", "Express", "OpenWeatherMap API"],
+            "live_link": "https://username.github.io/weather-app",
+            "github_link": "https://github.com/username/weather-app",
+            "image_urls": [
+                "images/1-1.png",
+                "images/1-2.png"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "Interactive Form",
+            "description": "For my third project, I used JavaScript to enhance an interactive registration form for a fictional Full Stack conference. Using the supplied HTML and CSS files, I added JavaScript to make the form more user-friendly by: - Adding customized and conditional behavior and interactivity - Validating user input and providing helpful error messages when the user entered invalid information into the form fields.",
+            "technologies": ["Angular", "Firebase", "Stripe API"],
+            "live_link": "https://username.github.io/e-commerce-platform",
+            "github_link": "https://github.com/LBalzi/interactive-form-v3",
+            "image_urls": [
+                "views/images/3-1.png",
+                "views/images/3-2.png"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "OOP Game Show App",
+            "description": "For my fourth project, I created a browser-based, word guessing game: 'Phrase Hunter.' I used JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tried to guess by clicking letters on an onscreen keyboard.",
+            "technologies": ["Vue.js", "Vuex", "Firebase"],
+            "live_link": "https://username.github.io/task-management-tool",
+            "github_link": "https://github.com/LBalzi/oop-game-v2",
+            "image_urls": [
+                "views/images/4-1.png",
+                "views/images/4-2.png"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Public API Requests",
+            "description": "For my fifth project, I created an employee directory for a fictional company called Awesome Startup. I fetched data for 12 random employees using the Random User Generator API and displayed it in a grid format on a webpage. Clicking on an employee's information revealed more details in a modal window. I wrote all the JavaScript code myself, without using any frameworks or libraries, to handle API requests and data display. This project demonstrated my ability to work with public APIs, manage asynchronous data, and create user-friendly interfaces.",
+            "technologies": ["Django", "PostgreSQL", "Bootstrap"],
+            "live_link": "https://username.github.io/blog-platform",
+            "github_link": "https://github.com/LBalzi/student-files",
+            "image_urls": [
+                "views/images/5-1.png",
+                "views/images/5-2.png"
+            ]
+        }
+        ]
+  }
