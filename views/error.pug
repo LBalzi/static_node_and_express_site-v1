@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Error
+    link(rel='stylesheet', href='/static/styles.css')
+  body
+    h1= error.status == 404 ? '404 - Page Not Found' : 'Error'
+    p= error.message
+    p
+      a(href='/') Go back Home

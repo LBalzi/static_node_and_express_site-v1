@@ -48,6 +48,28 @@ app.get('/project/:id', (req, res) => {
     }
 });
 
+// 404 Error handler for undefined routes
+// 404 Error handler for undefined routes
+app.use((req, res, next) => {
+    const err = new Error('Page not found');
+    err.status = 404;
+    next(err); // Pass the error to the global error handler
+});
+
+// Global error handler
+app.use((err, req, res, next) => {
+    // Ensure err object has a status and message
+    err.status = err.status || 500;
+    err.message = err.message || 'Internal Server Error';
+
+    console.error(`Error Status: ${err.status}, Message: ${err.message}`);
+    
+    // Respond with the error page
+    res.status(err.status);
+    res.render('error', { error: err });
+});
+
+
 // Start the server
 app.listen(3000, () => {
     console.log(`Server is running on port 3000`);

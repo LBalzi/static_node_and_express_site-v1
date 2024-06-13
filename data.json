@@ -32,8 +32,8 @@
             "live_link": "https://username.github.io/e-commerce-platform",
             "github_link": "https://github.com/LBalzi/interactive-form-v3",
             "image_urls": [
-                "views/images/3-1.png",
-                "views/images/3-2.png"
+                "images/2-1.png",
+                "images/2-2.png"
             ]
         },
         {
@@ -44,8 +44,8 @@
             "live_link": "https://username.github.io/task-management-tool",
             "github_link": "https://github.com/LBalzi/oop-game-v2",
             "image_urls": [
-                "views/images/4-1.png",
-                "views/images/4-2.png"
+                "images/3-1.png",
+                "images/3-2.png"
             ]
         },
         {
@@ -56,8 +56,8 @@
             "live_link": "https://username.github.io/blog-platform",
             "github_link": "https://github.com/LBalzi/student-files",
             "image_urls": [
-                "views/images/5-1.png",
-                "views/images/5-2.png"
+                "images/4-1.png",
+                "images/4-2.png"
             ]
         }
         ]
