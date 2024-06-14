@@ -2,9 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 
-// Create an Express app
 const app = express();
-const PORT = 3000;
 
 // Load data from data.json
 const dataFilePath = path.join(__dirname, 'data.json');
@@ -48,7 +46,6 @@ app.get('/project/:id', (req, res) => {
     }
 });
 
-// 404 Error handler for undefined routes
 // 404 Error handler for undefined routes
 app.use((req, res, next) => {
     const err = new Error('Page not found');
