@@ -362,3 +362,30 @@ nav a span {
     max-width: 1200px;
   }
 }
+
+/* CSS for Flexbox layout */
+.projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space items evenly */
+  gap: 16px; /* Add gap between items */
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Add gap between items */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.project-item {
+  flex: 1 1 calc(33.333% - 16px); /* 3 items per row */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.project-item:nth-child(4),
+.project-item:nth-child(5) {
+  flex: 1 1 calc(50% - 16px); /* 2 items per row */
+}

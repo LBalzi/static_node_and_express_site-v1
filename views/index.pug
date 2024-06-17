@@ -1,33 +1,33 @@
 extends layout.pug
 
 block content
-    .sidebar#my-info
-      .sidebar-info-box
-        br
-        .thumbnail-box
-          img.thumbnail(src=`/static/images/profile.jpg` alt="Profile Pic")
-        .dev-intro-box
-          h5 Lorenzo Balzi
-          p  Full stack developer student from Milan, Italy
-          a(href="/about") Learn More &rarr;
+  .sidebar#my-info
+    .sidebar-info-box
+      br
+      .thumbnail-box
+        img.thumbnail(src=`/static/images/profile.jpg` alt="Profile Pic")
+      .dev-intro-box
+        h5 Lorenzo Balzi
+        p Full stack developer student from Milan, Italy
+        a(href="/about") Learn More &rarr;
 
-    .wrapper
-      .header
-        .header-info-box
-          button.menu-icon#menu-icon(type="button" data-toggle="my-info")
-          span Lorenzo Balzi
+  .wrapper
+    .header
+      .header-info-box
+        button.menu-icon#menu-icon(type="button" data-toggle="my-info")
+        span Lorenzo Balzi
 
-      article.portfolio-intro
-        h1 Hello World!
-        p This is my portfolio of projects built with HTML, CSS, Javascript, APIs and DOM manipulation.
+    article.portfolio-intro
+      h1 Hello World!
+      p This is my portfolio of projects built with HTML, CSS, Javascript, APIs and DOM manipulation.
 
-      article.portfolio-project-thumbs
-        .projects-box.box.grid
-          ul
-            each project in projects
-              li
-                a(href=`/project/${project.id}`)
-                  img.thumbnail(src=`/static/${project.image_urls[0]}` width="50" height="50" alt=`Thumbnail of ${project.project_name}`)
-                  h5= project.project_name
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+      ul.project-list
+        each project in projects
+          li.project-item
+            a(href=`/project/${project.id}`)
+              img.thumbnail(src=`/static/${project.image_urls[0]}` width="250" height="250" alt=`Thumbnail of ${project.project_name}`)
+              h5= project.project_name
 
     script(src="/static/js/script.js")

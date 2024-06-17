@@ -12,10 +12,8 @@ block content
       .project-info-box.box
 
 
-        //- Use interpolation to dynamically add the project title
         h1= project.project_name
 
-        //- Use interpolation to dynamically add the project description
         p= project.description
 
       .project-tech-links-box.box
@@ -24,13 +22,11 @@ block content
           each tech in project.technologies
             li= tech
 
-        //- Add the href values to the links below
         a.btn-link(href=project.live_link) Live Demo
         a.btn-link(href=project.github_link) GitHub Repo
 
     .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
       each imageUrl in project.image_urls
         img(src=`/static/${imageUrl}`, alt=`Image of ${project.project_name}`)
 
