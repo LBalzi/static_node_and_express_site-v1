@@ -1,33 +1,17 @@
 extends layout.pug
 
-block content
-  .sidebar#my-info
-    .sidebar-info-box
-      br
-      .thumbnail-box
-        img.thumbnail(src=`/static/images/profile.jpg` alt="Profile Pic")
-      .dev-intro-box
-        h5 Lorenzo Balzi
-        p Full stack developer student from Milan, Italy
-        a(href="/about") Learn More &rarr;
-
-  .wrapper
-    .header
-      .header-info-box
-        button.menu-icon#menu-icon(type="button" data-toggle="my-info")
-        span Lorenzo Balzi
-
-    article.portfolio-intro
-      h1 Hello World!
-      p This is my portfolio of projects built with HTML, CSS, Javascript, APIs and DOM manipulation.
-
+block content 
+  article.grid-container.portfolio-intro
+    div
+      h1 MY TECHDEGREE PORTFOLIO
+      p.lead.text-light
+        | This is my portfolio that showcases the projects I have completed thus far in the Treehouse techdegree. 
+        br
+        | Check out my projects in the gallery below!
   article.portfolio-project-thumbs
     .projects-box.box.grid
-      ul.project-list
-        each project in projects
-          li.project-item
-            a(href=`/project/${project.id}`)
-              img.thumbnail(src=`/static/${project.image_urls[0]}` width="250" height="250" alt=`Thumbnail of ${project.project_name}`)
-              h5= project.project_name
-
-    script(src="/static/js/script.js")
+      each project in projects
+        .cell
+          a(href=`/project/${project.id}`, target='_blank')
+            img.thumbnail(src=`/static/${project.image_urls[0]}`  )
+            h5= project.project_name
